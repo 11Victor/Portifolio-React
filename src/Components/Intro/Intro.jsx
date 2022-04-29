@@ -3,6 +3,13 @@ import './Intro.css'
 import GitHub from '../../img/github.png';
 import Linkedin from '../../img/linkedin.png';
 import Instagram from '../../img/instagram.png';
+import Vector1 from "../../img/Vector1.png";
+import Vector2 from "../../img/Vector2.png";
+import boy from "../../img/boy.png";
+import glassesimoji from "../../img/glassesimoji.png";
+import thumbup from "../../img/thumbup.png";
+import crown from "../../img/crown.png";
+import FloatingDiv from '../FloatingDiv/FloatingDiv';
 
 const Intro = () => {
   return (
@@ -24,7 +31,12 @@ const Intro = () => {
             </div>
         </div>
         <div className="i-right">
-            Texto teste
+            <img src={Vector1} alt="" />
+            <img src={Vector2} alt="" />
+            <img src={boy} alt="" />
+            <div style={{top: '-9%', left: '74%'}}>
+              <FloatingDiv image={crown} txt1='Full' txt2='Stack'/>
+            </div>
         </div>
     </div>
   )
