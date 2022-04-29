@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="n-wrapper">
         <div className="n-left">
-            <div className="n-name">Victor Valencio</div>
+            <div className="n-name">Victor</div>
             <span>toggle</span>
         </div>
         <div className="n-right">
@@ -17,7 +17,7 @@ const Navbar = () => {
                     <li>Testimonials</li>
                 </ul>
             </div>
-            <button className="button">
+            <button className="button n-button">
                 Contact us
             </button>
         </div>
