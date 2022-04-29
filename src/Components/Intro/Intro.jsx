@@ -15,9 +15,12 @@ const Intro = () => {
             </div>
             <button className="button i-button">Contrate-me</button>
             <div className="i-icons">
-              <img src={GitHub} alt="" />
-              <img src={Linkedin} alt="" />
-              <img src={Instagram} alt="" />
+              <a href="https://github.com/11Victor" rel="noopener noreferrer" target="_blank"><img target="_blank" src={GitHub} alt="" /></a>
+              
+              <a href="https://www.linkedin.com/in/victorvalencio/" rel="noopener noreferrer" target="_blank"><img src={Linkedin} alt="" /></a>
+
+              <a href="https://www.instagram.com/victor__valencio/" rel="noopener noreferrer" target="_blank"><img src={Instagram} alt="" /></a>
+
             </div>
         </div>
         <div className="i-right">
