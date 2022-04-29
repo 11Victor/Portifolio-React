@@ -11,10 +11,10 @@ const Navbar = () => {
             <div className="n-list">
                 <ul style={{listStyleType: 'none'}}>
                     <li>Home</li>
-                    <li>Services</li>
-                    <li>Experience</li>
-                    <li>Portfolio</li>
-                    <li>Testimonials</li>
+                    <li>Serviços</li>
+                    <li>Experiência</li>
+                    <li>Portfólio</li>
+                    <li>Depoimentos</li>
                 </ul>
             </div>
             <button className="button n-button">
