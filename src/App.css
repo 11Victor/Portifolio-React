@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Gumela";
+  src: url("../src/Fonts/Gumela.otf") format("opentype");
+}
+
 :root
 {
   --yellow: #F5C32C;
