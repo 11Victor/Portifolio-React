@@ -1,16 +1,42 @@
+import React, {useState, useEffect} from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Intro from "./Components/Intro/Intro";
 import Servicos from "./Components/Servicos/Servicos";
 import Contato from "./Components/Contato/Contato";
+import { css } from "@emotion/react";
+import HashLoader from "react-spinners/HashLoader";
 import './App.css'
 
+const override = css`
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+`;
+
 function App() {
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  }, [])
   return (
+    
     <div className="App">
-      <Navbar/>
-      <Intro/>
-      <Servicos/>
-      <Contato/>
+
+          {loading ? (
+          <HashLoader size={150} color={'#FCA61F'} loading={loading} css={override}/>
+        ) : (
+          <><Navbar /><Intro /><Servicos /><Contato /></>
+        )
+      }
+  
     </div>
   );
 }
