@@ -12,11 +12,11 @@ const Servicos = () => {
     <div className="services">
         <div className="awesome">
             <span>Serviços</span>
-            <spane>
+            <span>
                 Verifique todos serviços que ofereço!
                 <br/>
                 Ou baixe meu currículo no link abaixo.    
-            </spane>
+            </span>
             <a href={Curriculo} download>
                 <button className="button s-button">Download CV</button>
             </a>
