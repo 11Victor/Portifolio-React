@@ -6,6 +6,8 @@ import Contato from "./Components/Contato/Contato";
 import { css } from "@emotion/react";
 import HashLoader from "react-spinners/HashLoader";
 import './App.css'
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.min.css';
 
 const override = css`
   text-align: center;
@@ -33,10 +35,16 @@ function App() {
           {loading ? (
           <HashLoader size={150} color={'#FCA61F'} loading={loading} css={override}/>
         ) : (
-          <><Navbar /><Intro /><Servicos /><Contato /></>
+          <>
+          <Navbar/>
+          <Intro/>
+          <Servicos/>
+          <Contato/>
+          <ToastContainer/>
+          </>
         )
       }
-  
+
     </div>
   );
 }
