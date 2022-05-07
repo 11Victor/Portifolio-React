@@ -8,6 +8,7 @@ import HashLoader from "react-spinners/HashLoader";
 import './App.css'
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.min.css';
+import Footer from "./Components/Footer/Footer";
 
 const override = css`
   text-align: center;
@@ -26,7 +27,7 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 3000)
+    }, 2500)
   }, [])
   return (
     
@@ -41,6 +42,7 @@ function App() {
           <Servicos/>
           <Contato/>
           <ToastContainer/>
+          <Footer/>
           </>
         )
       }
